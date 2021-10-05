@@ -1,0 +1,24 @@
+.title-contact{
+    background-color: #75A55B;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.8vh;
+    margin-bottom: 1em;
+}
+
+.container-footer {
+    background-color: #75A55B;
+}
+
+.footer-text {
+    background-color: #75A55B;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(0.5em + 0.8vw);
+}
+
+li {
+    list-style: none;
+}

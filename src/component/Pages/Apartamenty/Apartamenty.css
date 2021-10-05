@@ -1,0 +1,48 @@
+.petro-name{
+	margin: auto;
+	border-radius: 10px;
+	text-align: center;
+	border: solid 2px #75a55b;
+	background-color: #75a55b;
+}
+
+.focusVisibleClass{
+	background-color:red;
+}
+
+
+.accordion-apartment{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.accordion-footer-apartment{
+	margin: auto;
+	display: table;
+	padding-top: 2em;
+
+}
+
+.square-apartment:hover{
+	cursor: pointer;
+	transition: all 0.5s linear;
+	-webkit-filter: drop-shadow(10px 10px 15px #c6eac6);
+	filter: drop-shadow(10px 10px 10px #c6eac6);
+}
+
+.square-apartment{
+	border-radius: 10px;
+	margin: auto;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	/*list-style-image: url("arrow.png");*/
+	/*float: right;*/
+	padding: 0.4em;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 1.2rem;
+	/*margin-left: 2em;*/
+	height: 3em;
+	background-color: black;
+	color: white;
+}

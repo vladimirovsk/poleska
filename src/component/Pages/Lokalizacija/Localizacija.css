@@ -1,0 +1,85 @@
+.Localization{
+
+}
+
+.block-google{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.line-google-map{
+    margin-top: 2em;
+    margin-right: 2em;
+    /*margin-bottom: 1em;*/
+    border-top: 10px solid #000;
+    border-width: 3px;
+    /*background-color: black;*/
+    width: 100%;
+}
+
+.black-card-google:hover{
+    transition: box-shadow 0.5s linear;
+    box-shadow: 3px 5px 10px #75A55B;
+}
+
+.black-card-google {
+    background-color: black;
+    height: 4em;
+    width: 30%;
+    /*margin-top: -1em;*/
+    color: white;
+}
+
+.local-text-bottom{
+    background-color: white;
+    box-shadow: 3px 3px 10px #75A55B;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left ;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.local-text-bottom-row{
+    margin: 1em 0px 1em 0px;
+    padding: 0em 0em 0em 2em;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+
+.check-point{
+    list-style: none;
+    /*list-style-position: inside;*/
+    /*list-style-image: url("greenPoint.svg");*/
+    /*margin: 1em 0;*/
+    padding-left: 2em;
+/*  position: relative;*/
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    margin-top: 2em;
+}
+
+.li-localizac {
+    background-image: url("greenPoint.svg");
+    background-repeat: no-repeat;
+    /*background-position: left 50%;*/
+    /*background-position: top 0;*/
+    padding-left: 2em;
+    margin-top: 1em;
+}
+
+/*li:before{*/
+/*    content: url("greenPoint.svg");*/
+/*    display:  inline-block;*/
+/*    vertical-align:  middle;*/
+/*    margin-right:   0.5em;*/
+/*}*/
