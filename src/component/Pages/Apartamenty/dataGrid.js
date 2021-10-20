@@ -63,7 +63,7 @@ export const rowsParter = [
 	createData(2, 'B1.M2', '43.71', 2, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B1M[2]),
 	createData(3, 'B2.M1', '60.05', 3, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B2M[1]),
 	createData(4, 'B2.M2', '68.69', 4, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B2M[2]),
-	createData(5, 'B3.M1', '39.74', 2, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B3M[1]),
+	createData(5, 'B3.M1', '39.74', 2, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'rezerwacja', B3M[1]),
 	createData(6, 'B3.M2', '49.85', 2, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B3M[2]),
 ];
 
@@ -89,7 +89,7 @@ export const rowsPietro2 = [
 
 export const rowsPietro3 = [
 	createData(1, 'B1.M9', '87.10',4,<img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B1M[9]),
-	createData(2, 'B1.M10','43.17',2,<img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B1M[10]),
+	createData(2, 'B1.M10','43.17',2,<img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'rezerwacja', B1M[10]),
 	createData(3, 'B1.M11','54.09',3,<img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B1M[11]),
 	createData(4, 'B2.M7', '59.51',3,<img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B2M[7]),
 	createData(5, 'B2.M8', '83.51',4,<img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B2M[8]),
