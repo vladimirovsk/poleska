@@ -3,7 +3,6 @@ import {Navbar, Nav, Container} from 'react-bootstrap';
 import {NavLink} from 'react-router-dom';
 import logo from './logo.png'
 
-
 import './Header.css'
 
 function Header() {
