@@ -40,10 +40,10 @@ function createData(id, number, metraz, cena, karta, status, cardDetail) {
 
 
 const B31 = [ null, null, null, null,
-	B31G4, B31G5, B31G6, B31G7, B31G8, B31G9, B31G10, B31G11,
+	B31G4, B31G5, B31G6, B31G7, B31G8, B31G9, B31G10, B31G11, null,
 	B31G13, B31G14, B31G15, B31G16, B31G17, B31G18, B31G19, B31G20,
-	B31G21, B31G21, B31G22, B31G23, B31G24, B31G25, B31G26, B31G27,
-	B31G28, B31G29, B31G30, B31G31, B31G31, B31G32, B31G33, B31G34,
+	B31G21, B31G22, B31G23, B31G24, B31G25, B31G26, B31G27,
+	B31G28, B31G29, B31G30, B31G31, B31G32, B31G33, B31G34,
 ]
 
 export const columnsKomorka = [
@@ -56,10 +56,10 @@ export const columnsKomorka = [
 
 export const rowsKomorka = [
 	createData(1, 'B3-1.4', 2.33, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B31[4]),
-	createData(1, 'B3-1.5', 2.21, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B31[5]),
-	createData(1, 'B3-1.6', 2.51, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B31[6]),
+	createData(1, 'B3-1.5', 2.21, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B31[5]),
+	createData(1, 'B3-1.6', 2.51, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B31[6]),
 	createData(1, 'B3-1.7', 2.51, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B31[7]),
-	createData(1, 'B3-1.8', 1.46, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B31[8]),
+	createData(1, 'B3-1.8', 1.46, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B31[8]),
 	createData(1, 'B3-1.9', 1.39, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B31[9]),
 	createData(1, 'B3-1.10', 1.57, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B31[10]),
 	createData(1, 'B3-1.11', 1.57, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B31[11]),
