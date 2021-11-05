@@ -63,8 +63,8 @@ export const rowsParter = [
 	createData(2, 'B1.M2', '43.71', 2, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B1M[2]),
 	createData(3, 'B2.M1', '60.05', 3, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B2M[1]),
 	createData(4, 'B2.M2', '68.69', 4, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B2M[2]),
-	createData(5, 'B3.M1', '39.74', 2, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B3M[1]),
-	createData(6, 'B3.M2', '49.85', 2, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B3M[2]),
+	createData(5, 'B3.M1', '39.74', 2, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B3M[1]),
+	createData(6, 'B3.M2', '49.85', 2, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B3M[2]),
 ];
 
 export const rowsPietro1 = [
