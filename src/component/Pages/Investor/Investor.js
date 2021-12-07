@@ -1,22 +1,23 @@
 import React from "react";
 import {Container, Row, Col} from 'react-bootstrap';
 import Slider from "../../Slider/Slider"
-
+import Scontactuy from "../../Scontactuy/Scontactuy";
 import './Investor.css'
 
-import image1 from './poleska1.png'
-import image2 from './poleska2.png'
+const pathCard = '/pages/investor';
+const image1 = process.env.PUBLIC_URL+pathCard+ './poleska1.png'
+const image2 = process.env.PUBLIC_URL+pathCard+ './poleska2.png'
 
-import poleskaSlide1 from "./poleska/image1.png";
-import poleskaSlide2 from "./poleska/image2.png";
-import poleskaSlide3 from "./poleska/image3.png";
+const poleskaSlide1 = process.env.PUBLIC_URL+pathCard+ "/poleska/image1.png";
+const poleskaSlide2 = process.env.PUBLIC_URL+pathCard+ "/poleska/image2.png";
+const poleskaSlide3 = process.env.PUBLIC_URL+pathCard+ "/poleska/image3.png";
 
-import poleskaSlide4 from "./poleska/image4.png";
-import poleskaSlide5 from "./poleska/image5.png";
-import poleskaSlide6 from "./poleska/image6.png";
-import poleskaSlide7 from "./poleska/image7.png";
-import Scontactuy from "../../Scontactuy/Scontactuy";
-import logoPoleska from '../../Header/logo.png';
+const poleskaSlide4 = process.env.PUBLIC_URL+pathCard+ "/poleska/image4.png";
+const poleskaSlide5 = process.env.PUBLIC_URL+pathCard+ "/poleska/image5.png";
+const poleskaSlide6 = process.env.PUBLIC_URL+pathCard+ "/poleska/image6.png";
+const poleskaSlide7 = process.env.PUBLIC_URL+pathCard+ "/poleska/image7.png";
+
+const logoPoleska = process.env.PUBLIC_URL+'/component/header/logo.png';
 
 function Investor() {
 

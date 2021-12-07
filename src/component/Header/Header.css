@@ -6,6 +6,10 @@
     font-size: 18px;
 }
 
+.nav-link-dropdown{
+    width: 18em;
+}
+
 .mr-auto, .mx-auto {
     margin:auto;
 }
@@ -18,7 +22,6 @@
 .navbar-toggler {
     background-color: white;
 }
-
 
 .navbar-light .navbar-nav .nav-link {
     color: black;

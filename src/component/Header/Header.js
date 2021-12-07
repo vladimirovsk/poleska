@@ -1,9 +1,10 @@
 import React from 'react';
-import {Navbar, Nav, Container} from 'react-bootstrap';
+import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap';
 import {NavLink} from 'react-router-dom';
-import logo from './logo.png'
 
 import './Header.css'
+
+const logo = process.env.PUBLIC_URL+ '/component/header/logo.png'
 
 function Header() {
     return(
@@ -21,8 +22,10 @@ function Header() {
                     <Nav className="mr-auto justify-content-end" activeKey="/" >
                             <NavLink exact className={'nav-link'} activeClassName="active" to={"/"}>O INWESTYCJI</NavLink>
                             <NavLink className={'nav-link'} activeClassName="active" to={'/localizacija'}>LOKALIZACJA</NavLink>
-                            <NavLink className={'nav-link'} activeClassName="active" to={'/apartamenty'}>APARTAMENTY</NavLink>
-                            <NavLink className={'nav-link'} activeClassName="active" to={'/garaze'}>GARAŻE I KOMÓRKI LOKATORSKIE</NavLink>
+                            <NavDropdown title="BUDYNEK" id="nav-dropdown">
+                                <NavLink className={'nav-link nav-link-dropdown'} activeClassName="active" to={'/apartamenty'}>APARTAMENTY</NavLink>
+                                <NavLink className={'nav-link nav-link-dropdown'} activeClassName="active" to={'/garaze'}>GARAŻE I KOMÓRKI LOKATORSKIE</NavLink>
+                            </NavDropdown>
                             <NavLink className={'nav-link'} activeClassName="active" to={'/podbrania'}>DO POBRANIA</NavLink>
                     </Nav>
                 </Navbar.Collapse>

@@ -5,13 +5,14 @@ import {Accordion, AccordionSummary, Typography, AccordionDetails} from '@materi
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import TablePoleska from "../../Table/TablePoleska";
 
-import imageLogo from '../../Header/logo.png';
 import {makeStyles} from '@material-ui/core/styles';
 
 import {columns, rowsParter, rowsPietro1, rowsPietro2, rowsPietro3} from './dataGrid';
 import './Apartamenty.css';
 
+const imageLogo =  process.env.PUBLIC_URL + '/component/header/logo.png';
 const pathCard = '/pages/apartamenty/cardDetail/';
+
 const parterPdf = process.env.PUBLIC_URL+pathCard+'parter.pdf';
 const pietro1Pdf = process.env.PUBLIC_URL+pathCard+'1_pietro.pdf';
 const pietro2Pdf = process.env.PUBLIC_URL+pathCard+'2_pietro.pdf';

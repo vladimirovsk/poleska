@@ -2,9 +2,9 @@ import React from "react";
 import {Col, Container, Row} from 'react-bootstrap';
 import Scontactuy from "../../Scontactuy/Scontactuy";
 import './Localizacija.css'
-import localMap from './localMap.png'
-import blackCard from './blackCard.png'
-import logoPoleska from '../../Header/logo.png'
+const localMap = process.env.PUBLIC_URL+ '/pages/lokalizacija/localMap.png';
+const blackCard = process.env.PUBLIC_URL+ '/pages/lokalizacija/blackCard.png';
+const logoPoleska = process.env.PUBLIC_URL+ '/component/header/logo.png';
 
 function Localizacija() {
 
@@ -49,12 +49,12 @@ function Localizacija() {
                 <div className={'block-google '}>
                     <div className={'line-google-map d-none d-lg-block'}></div>
                     <div className={'black-card-google d-none d-lg-block'} style={{
-                        cursor: 'pointer',
-                        width:'100%',
-                        backgroundImage:`url(${blackCard})`,
-                        backgroundRepeat:'no-repeat',
-                        backgroundPosition: 'center'
-                    }} onClick={(event)=>openNewWindow(url)}></div>
+    cursor: 'pointer',
+    width: '100%',
+    backgroundImage: `url(${blackCard})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center'
+}} onClick={(event) => openNewWindow(url)}/>
                 </div>
             </Container>
 
