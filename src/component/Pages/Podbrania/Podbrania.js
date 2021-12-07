@@ -2,9 +2,9 @@ import React from "react";
 import {Container} from 'react-bootstrap';
 import {Accordion, AccordionDetails, AccordionSummary, Typography} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
-import imageArrow from "../Apartamenty/arrow.png";
-import prospectDocument from './PROSPEKT_INFORMACYJNY.pdf'
-import standartDocument from './STANDARD_WYKONCZENIA.pdf';
+const imageArrow = process.env.PUBLIC_URL+"/pages/apartamenty/arrow.png";
+const prospectDocument = process.env.PUBLIC_URL+ '/pages/podbrania/PROSPEKT_INFORMACYJNY.pdf'
+const standartDocument = process.env.PUBLIC_URL+ '/pages/podbrania/STANDARD_WYKONCZENIA.pdf';
 
 
 const useStyles = makeStyles((theme) => ({

@@ -1,36 +1,36 @@
 import React from "react";
-import greenPdf from "./green_pdf.svg";
+const greenPdf = process.env.PUBLIC_URL+"/pages/apartamenty/green_pdf.svg";
 
-import B1M1 from './CardDetail/B1.M1.pdf'
-import B1M2 from './CardDetail/B1.M2.pdf'
-import B1M3 from './CardDetail/B1.M3.pdf'
-import B1M4 from './CardDetail/B1.M4.pdf'
-import B1M5 from './CardDetail/B1.M5.pdf'
-import B1M6 from './CardDetail/B1.M6.pdf'
-import B1M7 from './CardDetail/B1.M7.pdf'
-import B1M8 from './CardDetail/B1.M8.pdf'
-import B1M9 from './CardDetail/B1.M9.pdf'
-import B1M10 from './CardDetail/B1.M10.pdf'
-import B1M11 from './CardDetail/B1.M11.pdf'
+const pathCard = '/pages/apartamenty/cardDetail/';
+const B1M1 = process.env.PUBLIC_URL+pathCard+'B1.M1.pdf';
+const B1M2 = process.env.PUBLIC_URL+pathCard+'B1.M2.pdf';
+const B1M3 = process.env.PUBLIC_URL+pathCard+'B1.M3.pdf';
+const B1M4 = process.env.PUBLIC_URL+pathCard+'B1.M4.pdf';
+const B1M5 = process.env.PUBLIC_URL+pathCard+'B1.M5.pdf';
+const B1M6 = process.env.PUBLIC_URL+pathCard+'B1.M6.pdf';
+const B1M7 = process.env.PUBLIC_URL+pathCard+'B1.M7.pdf';
+const B1M8 = process.env.PUBLIC_URL+pathCard+'B1.M8.pdf';
+const B1M9 = process.env.PUBLIC_URL+pathCard+'B1.M9.pdf';
+const B1M10 = process.env.PUBLIC_URL+pathCard+'B1.M10.pdf';
+const B1M11 = process.env.PUBLIC_URL+pathCard+'B1.M11.pdf';
 
-import B2M1 from './CardDetail/B2.M1.pdf'
-import B2M2 from './CardDetail/B2.M2.pdf'
-import B2M3 from './CardDetail/B2.M3.pdf'
-import B2M4 from './CardDetail/B2.M4.pdf'
-import B2M5 from './CardDetail/B2.M5.pdf'
-import B2M6 from './CardDetail/B2.M6.pdf'
-import B2M7 from './CardDetail/B2.M7.pdf'
-import B2M8 from './CardDetail/B2.M8.pdf'
+const B2M1 = process.env.PUBLIC_URL+pathCard+'B2.M1.pdf';
+const B2M2 = process.env.PUBLIC_URL+pathCard+'B2.M2.pdf';
+const B2M3 = process.env.PUBLIC_URL+pathCard+'B2.M3.pdf';
+const B2M4 = process.env.PUBLIC_URL+pathCard+'B2.M4.pdf';
+const B2M5 = process.env.PUBLIC_URL+pathCard+'B2.M5.pdf';
+const B2M6 = process.env.PUBLIC_URL+pathCard+'B2.M6.pdf';
+const B2M7 = process.env.PUBLIC_URL+pathCard+'B2.M7.pdf';
+const B2M8 = process.env.PUBLIC_URL+pathCard+'B2.M8.pdf';
 
-
-import B3M1 from './CardDetail/B3.M1.pdf'
-import B3M2 from './CardDetail/B3.M2.pdf'
-import B3M3 from './CardDetail/B3.M3.pdf'
-import B3M4 from './CardDetail/B3.M4.pdf'
-import B3M5 from './CardDetail/B3.M5.pdf'
-import B3M6 from './CardDetail/B3.M6.pdf'
-import B3M7 from './CardDetail/B3.M7.pdf'
-import B3M8 from './CardDetail/B3.M8.pdf'
+const B3M1 = process.env.PUBLIC_URL+pathCard+'B3.M1.pdf';
+const B3M2 = process.env.PUBLIC_URL+pathCard+'B3.M2.pdf';
+const B3M3 = process.env.PUBLIC_URL+pathCard+'B3.M3.pdf';
+const B3M4 = process.env.PUBLIC_URL+pathCard+'B3.M4.pdf';
+const B3M5 = process.env.PUBLIC_URL+pathCard+'B3.M5.pdf';
+const B3M6 = process.env.PUBLIC_URL+pathCard+'B3.M6.pdf';
+const B3M7 = process.env.PUBLIC_URL+pathCard+'B3.M7.pdf';
+const B3M8 = process.env.PUBLIC_URL+pathCard+'B3.M8.pdf';
 
 const B1M = [
 	null, B1M1, B1M2, B1M3, B1M4, B1M5, B1M6, B1M7, B1M8, B1M9, B1M10, B1M11
@@ -55,7 +55,6 @@ export const columns = [
 	{id: 'karta', label: 'Karty mieszkań', align: 'center'},
 	{id: 'status', label: 'Status'}
 	//minWidth: 180,
-
 ]
 
 export const rowsParter = [

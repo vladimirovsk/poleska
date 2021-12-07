@@ -3,8 +3,6 @@ import is from 'is_js';
 import emailjs from 'emailjs-com';
 import {Container, Button, Form} from "react-bootstrap";
 
-
-
 import './Scontactuy.css'
 
 export default function Scontactuy() {
@@ -46,13 +44,11 @@ export default function Scontactuy() {
 	const handleTextareaChange = (event) =>{
 		setTextArea(event.target.value)
 		validateControl(event.target.value, 'message')
-
 	}
 
 	const handleEmailChange = (event) => {
 		setEmail(event.target.value)
 		validateControl(event.target.value, 'email')
-
 	}
 
 	const handleSend = () =>{
@@ -65,7 +61,6 @@ export default function Scontactuy() {
 		setEmail('');
 		setTextArea('');
 		setTextBtnSend('WYŚLIJ')
-
 	}
 
 	React.useEffect(()=>{
@@ -78,10 +73,6 @@ export default function Scontactuy() {
 	}, [isLoading])
 
 	function networkRequest() {
-		// const login_email = 'biuro@hkgroup.pl';
-		// const password_email = 'Poleska123';
-		// const host_email = 'server796878.nazwa.pl';
-		// const template_it = 'template_hkgroup';
 		return new Promise((resolve) => {
 			const template_params1 = {
 				"reply_to": email,

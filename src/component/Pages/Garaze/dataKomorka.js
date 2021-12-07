@@ -1,43 +1,42 @@
-import greenPdf from "../Apartamenty/green_pdf.svg";
 import React from "react";
 
-import B31G4 from './KomorkaDetail/B3.-1.4.pdf';
-import B31G5 from './KomorkaDetail/B3.-1.5.pdf';
-import B31G6 from './KomorkaDetail/B3.-1.6.pdf';
-import B31G7 from './KomorkaDetail/B3.-1.7.pdf';
-import B31G8 from './KomorkaDetail/B3.-1.8.pdf';
-import B31G9 from './KomorkaDetail/B3.-1.9.pdf';
-import B31G10 from './KomorkaDetail/B3.-1.10.pdf';
-import B31G11 from './KomorkaDetail/B3.-1.11.pdf';
+const greenPdf = process.env.PUBLIC_URL+'/apartamenty/green_pdf.svg';
+const pathCard = '/pages/garaze/';
+const B31G4 = process.env.PUBLIC_URL+pathCard+'KomorkaconstDetail/B3.-1.4.pdf';
+const B31G5 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.5.pdf';
+const B31G6 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.6.pdf';
+const B31G7 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.7.pdf';
+const B31G8 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.8.pdf';
+const B31G9 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.9.pdf';
+const B31G10 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.10.pdf';
+const B31G11 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.11.pdf';
 
-import B31G13 from './KomorkaDetail/B3.-1.13.pdf';
-import B31G14 from './KomorkaDetail/B3.-1.14.pdf';
-import B31G15 from './KomorkaDetail/B3.-1.15.pdf';
-import B31G16 from './KomorkaDetail/B3.-1.16.pdf';
-import B31G17 from './KomorkaDetail/B3.-1.17.pdf';
-import B31G18 from './KomorkaDetail/B3.-1.18.pdf';
-import B31G19 from './KomorkaDetail/B3.-1.19.pdf';
-import B31G20 from './KomorkaDetail/B3.-1.20.pdf';
-import B31G21 from './KomorkaDetail/B3.-1.21.pdf';
-import B31G22 from './KomorkaDetail/B3.-1.22.pdf';
-import B31G23 from './KomorkaDetail/B3.-1.23.pdf';
-import B31G24 from './KomorkaDetail/B3.-1.24.pdf';
-import B31G25 from './KomorkaDetail/B3.-1.25.pdf';
-import B31G26 from './KomorkaDetail/B3.-1.26.pdf';
-import B31G27 from './KomorkaDetail/B3.-1.27.pdf';
-import B31G28 from './KomorkaDetail/B3.-1.28.pdf';
-import B31G29 from './KomorkaDetail/B3.-1.29.pdf';
-import B31G30 from './KomorkaDetail/B3.-1.30.pdf';
-import B31G31 from './KomorkaDetail/B3.-1.31.pdf';
-import B31G32 from './KomorkaDetail/B3.-1.32.pdf';
-import B31G33 from './KomorkaDetail/B3.-1.33.pdf';
-import B31G34 from './KomorkaDetail/B3.-1.34.pdf';
+const B31G13 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.13.pdf';
+const B31G14 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.14.pdf';
+const B31G15 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.15.pdf';
+const B31G16 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.16.pdf';
+const B31G17 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.17.pdf';
+const B31G18 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.18.pdf';
+const B31G19 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.19.pdf';
+const B31G20 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.20.pdf';
+const B31G21 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.21.pdf';
+const B31G22 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.22.pdf';
+const B31G23 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.23.pdf';
+const B31G24 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.24.pdf';
+const B31G25 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.25.pdf';
+const B31G26 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.26.pdf';
+const B31G27 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.27.pdf';
+const B31G28 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.28.pdf';
+const B31G29 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.29.pdf';
+const B31G30 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.30.pdf';
+const B31G31 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.31.pdf';
+const B31G32 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.32.pdf';
+const B31G33 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.33.pdf';
+const B31G34 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.34.pdf';
 
 function createData(id, number, metraz, cena, karta, status, cardDetail) {
 	return {id, number, metraz, cena, karta, status, cardDetail};
 }
-
-
 
 const B31 = [ null, null, null, null,
 	B31G4, B31G5, B31G6, B31G7, B31G8, B31G9, B31G10, B31G11, null,

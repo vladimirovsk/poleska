@@ -5,17 +5,20 @@ import {Accordion, AccordionSummary, Typography, AccordionDetails} from '@materi
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import TablePoleska from "../../Table/TablePoleska";
 
-import imageArrow from './arrow.png'
 import imageLogo from '../../Header/logo.png';
 import {makeStyles} from '@material-ui/core/styles';
 
-import {columns, rowsParter, rowsPietro1, rowsPietro2, rowsPietro3} from './dataGrid'
-
-import parterPdf from './CardDetail/parter.pdf'
-import pietro1Pdf from './CardDetail/1_pietro.pdf'
-import pietro2Pdf from './CardDetail/2_pietro.pdf'
-import pietro3Pdf from './CardDetail/3_pietro.pdf'
+import {columns, rowsParter, rowsPietro1, rowsPietro2, rowsPietro3} from './dataGrid';
 import './Apartamenty.css';
+
+const pathCard = '/pages/apartamenty/cardDetail/';
+const parterPdf = process.env.PUBLIC_URL+pathCard+'parter.pdf';
+const pietro1Pdf = process.env.PUBLIC_URL+pathCard+'1_pietro.pdf';
+const pietro2Pdf = process.env.PUBLIC_URL+pathCard+'2_pietro.pdf';
+const pietro3Pdf = process.env.PUBLIC_URL+pathCard+'3_pietro.pdf';
+
+const imageArrow = process.env.PUBLIC_URL+ '/pages/apartamenty/arrow.png';
+
 
 const useStyles = makeStyles((theme) => ({
 	root: {
