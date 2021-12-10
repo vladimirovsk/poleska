@@ -7,6 +7,7 @@ import Localizacija from "./component/Pages/Lokalizacija/Localizacija";
 import Apartamenty from "./component/Pages/Apartamenty/Apartamenty";
 import Garaze from "./component/Pages/Garaze/Garaze";
 import Podbrania from "./component/Pages/Podbrania/Podbrania";
+import Galeria from "./component/galeria/Galeria";
 
 
 const App=()=> {
@@ -17,6 +18,7 @@ const App=()=> {
         <Route exact={true} path="/apartamenty" render={()=><Apartamenty/>}/>
         <Route exact={true} path="/garaze" render={()=><Garaze/>}/>
         <Route exact={true} path="/podbrania" render={()=><Podbrania/>}/>
+        <Route exact={true} path="/zdjencia" render={()=><Galeria/>}/>
         <Redirect to={'/'} />
       </Switch>
   )

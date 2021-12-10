@@ -5,8 +5,8 @@ import Scontactuy from "../../Scontactuy/Scontactuy";
 import './Investor.css'
 
 const pathCard = '/pages/investor';
-const image1 = process.env.PUBLIC_URL+pathCard+ './poleska1.png'
-const image2 = process.env.PUBLIC_URL+pathCard+ './poleska2.png'
+const image1 = process.env.PUBLIC_URL+pathCard+ '/poleska1.png'
+const image2 = process.env.PUBLIC_URL+pathCard+ '/poleska2.png'
 
 const poleskaSlide1 = process.env.PUBLIC_URL+pathCard+ "/poleska/image1.png";
 const poleskaSlide2 = process.env.PUBLIC_URL+pathCard+ "/poleska/image2.png";

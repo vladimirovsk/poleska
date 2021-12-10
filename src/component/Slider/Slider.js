@@ -5,7 +5,7 @@ import './Slider.scss'
 
 function Slider(props) {
     const {imageData, Caption} = props;
-    const [index, setIndex] = React.useState(0);
+    const [setIndex] = React.useState(0);
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);

@@ -2,6 +2,7 @@ import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import logo from '../../image/logo.svg'
 import {Envelope, GeoAlt, TelephoneFill} from 'react-bootstrap-icons';
+import FloatButton from '../FloatButton/FloatButton'
 
 import './Footer.css'
 
@@ -57,6 +58,7 @@ function Footer() {
                         <img src={logo} alt={"logo"} width={100}></img>
                     </Col>
                 </Row>
+            <FloatButton />
         </Container>
     )
 

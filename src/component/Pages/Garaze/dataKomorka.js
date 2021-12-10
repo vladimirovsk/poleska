@@ -1,7 +1,8 @@
 import React from "react";
 
-const greenPdf = process.env.PUBLIC_URL+'/apartamenty/green_pdf.svg';
+const greenPdf = process.env.PUBLIC_URL+'/pages/apartamenty/green_pdf.svg';
 const pathCard = '/pages/garaze/';
+
 const B31G4 = process.env.PUBLIC_URL+pathCard+'KomorkaconstDetail/B3.-1.4.pdf';
 const B31G5 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.5.pdf';
 const B31G6 = process.env.PUBLIC_URL+pathCard+'KomorkaDetail/B3.-1.6.pdf';

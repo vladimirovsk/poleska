@@ -1,0 +1,91 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+@media (min-width: 576px)
+     /*.modal-dialog { max-width: 500px; margin: 1.75rem auto; }*/
+    * {
+        outline: 0 !important;
+    }
+
+    .imageGalerey {
+        opacity: 1;
+        /* filter: blur(2px); */
+    }
+
+    .imageGalerey:hover {
+        opacity: 1;
+        box-shadow: "2 2 10px #343434"
+        /* filter: blur(0px); */
+    }
+
+    .MuiIconButton-label:hover {
+        box-shadow: "2 2 10px #343434"
+    }
+
+    .dialogGalery {
+        /* position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; */
+        opacity: 0.9;
+        background-color: #545454;
+        /* width: "1200px",
+      paddingLeft: "0px"
+      background-color: #545454;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      right: 40px;
+      bottom: 40px;
+      background-color: papayawhip; */
+        margin: 0;
+        padding: 0;
+    }
+
+    .modal-dialog {
+        left: 0;
+        top: 0;
+        position: relative;
+        width: 90vw;
+        height: 90vh;
+        margin: 5 5 auto;
+    }
+
+
+    .modal-content {
+        position: relative;
+        border-radius: 0px;
+    }
+
+    .imageCard {
+        height: 100%;
+        margin-right: 15px;
+        padding: 0px;
+        box-shadow: 2px 2px 10px #545454
+    }
+
+    .list-group-item-action {
+        color: black;
+        align-items: flex-start;
+    }
+
+    .list-group-item-action.active {
+        background-color: #495057;
+        transition: background-color 1s ease-in;
+        background-color: #75A55B;
+        color: black;
+    }
+
+    .year-row {
+        color: black;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .title-galeria {
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+
