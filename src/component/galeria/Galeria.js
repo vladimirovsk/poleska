@@ -22,43 +22,17 @@ const useStyles = makeStyles((theme) => ({
 
 function Galeria(props) {
     const classes = useStyles();
-    const [project, setProject] = useState('2021-1');
-    const [selectGaleria, setSelectGaleria] = useState();
-    const [title, setTitle] = useState('');
-    const [titleCard, setTitleCard] = useState('');
+    const [selectGaleria, setSelectGaleria] = useState(GaleriaData[0]);
     ;
 
     const handleClickListItem = (project) => {
-        setProject(project)
+        setSelectGaleria(project)
     }
 
-    const setDefaultActiveList = (project) => {
-        let elem = document.getElementById('list-2021-1');
-        console.log(elem);
-    }
-
-    const useStylesBootstrap = makeStyles((theme) => ({
-        arrow: {
-            color: theme.palette.common.black,
-        },
-        tooltip: {
-            fontSize: '15px',
-            backgroundColor: theme.palette.common.black,
-        },
-    }));
 
     React.useEffect((props) => {
-        setSelectGaleria(Galeria);
-        setTitleCard("");
-    }, [project])
-
-    React.useEffect((props) => {
-        setProject(GaleriaData[0]);
-        let elem = document.getElementById('list-2021-1')
-        if (elem) {
-            document.getElementById('list-2021-1').classList.remove('active')
-        }
-    }, [])
+       setSelectGaleria(selectGaleria)
+    }, [selectGaleria])
 
 
     const getImagesGalery = (project) => {
@@ -66,8 +40,9 @@ function Galeria(props) {
         try {
             project.map((item, key) =>
                 images.push({
-                    original: item,
-                    thumbnail: item
+                    original: item.image,
+                    thumbnail: item.image,
+                    description: item.caption
                 })
             )
         } catch (error) {
@@ -75,38 +50,6 @@ function Galeria(props) {
         }
         return images;
     }
-
-    const Galeria = (props) => {
-        return (
-            <div>
-                <Row>
-                    <Col sm={2} lg={2} style={{margin: '0px', padding: '0px'}}>
-                        <Row>
-                            <Col sm={12} className={'year-row'}>
-                                2021
-                            </Col>
-                        </Row>
-                        <ListGroup variant="flush">
-                            {GaleriaData.map((project) => (
-                                <ListGroup.Item action className={"text-left"} eventKey={'2021-' + project.id}
-                                                id={'list-2021-' + project.id}
-                                                onClick={(e) => handleClickListItem(project)}>
-                                    {project.name}
-                                </ListGroup.Item>
-                            ))}
-                        </ListGroup>
-                    </Col>
-                    <Col sm={10} lg={10} style={{margin: '0px', padding: '0px'}}>
-                        <ImageGallery style={{height: '40vh'}}
-                                      lazyLoad={true}
-                                      items={getImagesGalery(project.images)}/>
-                    </Col>
-                </Row>
-                <Row style={{height: '10vh'}}></Row>
-            </div>
-        )
-    }
-
 
     return (
         <div className={classes.root} style={{backgroundColor: 'white'}}>
@@ -118,10 +61,37 @@ function Galeria(props) {
                 <Row className="justify-content-center mx-auto">
                     <Row className='cardFirma'>
                         <Col com={2}></Col>
-                        <Col className={'title-galeria'} sm={10}>{project.title}
+                        <Col className={'title-galeria'} sm={10}>
+                            {selectGaleria.title}
                         </Col>
                     </Row>
-                    {selectGaleria}
+                    <div>
+                        <Row>
+                            <Col sm={2} lg={2} style={{margin: '0px', padding: '0px'}}>
+                                <Row>
+                                    <Col sm={12} className={'year-row'}>
+                                        2021
+                                    </Col>
+                                </Row>
+                                <ListGroup variant="flush" defaultActiveKey="list-2021-1" >
+                                    {GaleriaData.map((data) => (
+                                        <ListGroup.Item action className={"text-left"}
+                                                        eventKey={'list-2021-' + data.id}
+                                                        onClick={(e) => handleClickListItem(data)}>
+                                            {data.name}
+                                        </ListGroup.Item>
+                                    ))}
+                                </ListGroup>
+                            </Col>
+                            <Col sm={10} lg={10} style={{margin: '0px', padding: '0px'}}>
+                                <ImageGallery
+                                    lazyLoad={true}
+                                    items={getImagesGalery(selectGaleria.images)}
+                                />
+                            </Col>
+                        </Row>
+                        <Row style={{height: '10vh'}}></Row>
+                    </div>
                 </Row>
             </Container>
         </div>

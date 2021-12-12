@@ -65,6 +65,7 @@ export default function Scontactuy() {
 
 	React.useEffect(()=>{
 		if (isLoading) {
+
 			networkRequest().then(() => {
 				setLoading(false);
 				handleClose()

@@ -1,12 +1,12 @@
 .floatButton { 
   transition: all 0.5s ease;
   z-index: 1000;
-  font-size: 1.2em;
+  font-size: 1.5em;
   position: fixed; 
   bottom: 2em; 
   right: 20px; 
   display: block; 
-  background: red; 
+  background: black;
   color: white; 
   width: 80px;
   height: 80px; 

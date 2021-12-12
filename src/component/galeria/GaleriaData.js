@@ -10,13 +10,40 @@ const November2021_3 = process.env.PUBLIC_URL + '/component/galeria/november/3.j
 
 
 export const October2021 = [
-    October2021_1, October2021_2, October2021_3,
-    October2021_4
+    {
+        image: October2021_1,
+        caption: 'WYKONANIE OGRODZENIA TERENU INWESTYCJI ORAZ ZAPLECZA SOCJALNO-SANITARNEGO.'
+    },
+    {
+        image: October2021_2,
+        caption: 'WYKONANIE OGRODZENIA TERENU INWESTYCJI ORAZ ZAPLECZA SOCJALNO-SANITARNEGO.'
+    },
+    {
+        image: October2021_3,
+        caption: 'NIWELACJA TERENU ORAZ PRZYGOTOWANIA DO WYKONANIA PALISADY'
+    },
+    {
+        image: October2021_4,
+        caption: 'NIWELACJA TERENU ORAZ PRZYGOTOWANIA DO WYKONANIA PALISADY'
+    },
+
+
 ]
 
 const November2021 = [
-    November2021_1, November2021_2, November2021_3
-]
+    {
+        image: November2021_1,
+        caption: 'REALIZACJA ZABEZPIECZENIA WYKOPU W FORMIE PALISADY'
+    },
+
+    {
+        image: November2021_2,
+        caption: 'REALIZACJA ZABEZPIECZENIA WYKOPU W FORMIE PALISADY'
+    },
+    {
+        image: November2021_3,
+        caption: 'REALIZACJA ZABEZPIECZENIA WYKOPU W FORMIE PALISADY'
+    },]
 
 export const GaleriaData = [
     {
@@ -24,13 +51,13 @@ export const GaleriaData = [
         img: October2021_1, //Код картинки
         name: "Październik",
         images: October2021, //Массив картинок проекта
-        title: 'NIWELACJA TERENU ORAZ PRZYGOTOWANIA DO WYKONANIA PALISADY', //Тител
+        title: 'Październik 2021', //Тител
     },
     {
         id: 2, //Код,
         name: "Listopad",
         img: November2021_1, //Код картинки
         images: November2021, //Массив картинок проекта
-        title: 'REALIZACJA ZABEZPIECZENIA WYKOPU W FORMIE PALISADY', //Тител
+        title: 'Listopad 2021', //Тител
     }
 ]
