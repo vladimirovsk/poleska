@@ -89,7 +89,9 @@ function Galeria(props) {
                                 </ListGroup>
                             </Col>
                             <Col sm={10} lg={10} style={{margin: '0px', padding: '0px'}}>
-                                <div className={"title-galeria"}>{selectGaleria.images[imageIndex].caption}</div>
+                                <div className={"title-galeria"}>{
+                                    Boolean(selectGaleria.images[imageIndex].caption) ? selectGaleria.images[imageIndex].caption : ''
+                                }</div>
                                 <ImageGallery
                                     onSlide={(e)=>handleImageIndex(e)}
                                     lazyLoad={true}
