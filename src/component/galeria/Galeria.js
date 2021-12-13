@@ -21,9 +21,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Galeria(props) {
+    const refImg = React.useRef(null)
     const classes = useStyles();
     const [selectGaleria, setSelectGaleria] = useState(GaleriaData[0]);
-    ;
+    const [imageIndex, setImageIndex] = useState(0);
 
     const handleClickListItem = (project) => {
         setSelectGaleria(project)
@@ -42,13 +43,17 @@ function Galeria(props) {
                 images.push({
                     original: item.image,
                     thumbnail: item.image,
-                    description: item.caption
+                    // description: item.caption
                 })
             )
         } catch (error) {
             images = [];
         }
         return images;
+    }
+
+    const handleImageIndex = (index) => {
+        setImageIndex(index);
     }
 
     return (
@@ -62,7 +67,7 @@ function Galeria(props) {
                     <Row className='cardFirma'>
                         <Col com={2}></Col>
                         <Col className={'title-galeria'} sm={10}>
-                            {selectGaleria.title}
+                            {/*{selectGaleria.title}*/}
                         </Col>
                     </Row>
                     <div>
@@ -84,7 +89,9 @@ function Galeria(props) {
                                 </ListGroup>
                             </Col>
                             <Col sm={10} lg={10} style={{margin: '0px', padding: '0px'}}>
+                                <div className={"title-galeria"}>{selectGaleria.images[imageIndex].caption}</div>
                                 <ImageGallery
+                                    onSlide={(e)=>handleImageIndex(e)}
                                     lazyLoad={true}
                                     items={getImagesGalery(selectGaleria.images)}
                                 />
