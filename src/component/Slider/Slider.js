@@ -5,7 +5,7 @@ import './Slider.scss'
 
 function Slider(props) {
     const {imageData, Caption} = props;
-    const [setIndex] = React.useState(0);
+    const [selectedIndex, setIndex] = React.useState(0);
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
@@ -14,7 +14,7 @@ function Slider(props) {
     return (
         <Container fluid={false}>
             <Carousel fade={true}
-                      controls={false}
+                      controls={true}
                       indicators={true}
                       pause={false}
                       wrap={true}

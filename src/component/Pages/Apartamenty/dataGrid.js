@@ -25,6 +25,7 @@ const B2M8 = process.env.PUBLIC_URL+pathCard+'B2.M8.pdf';
 
 const B3M1 = process.env.PUBLIC_URL+pathCard+'B3.M1.pdf';
 const B3M2 = process.env.PUBLIC_URL+pathCard+'B3.M2.pdf';
+const B3M22 = process.env.PUBLIC_URL+pathCard+'B3.M22.pdf';
 const B3M3 = process.env.PUBLIC_URL+pathCard+'B3.M3.pdf';
 const B3M4 = process.env.PUBLIC_URL+pathCard+'B3.M4.pdf';
 const B3M5 = process.env.PUBLIC_URL+pathCard+'B3.M5.pdf';
@@ -41,7 +42,7 @@ const B2M = [
 ]
 
 const B3M = [
-	null, B3M1, B3M2, B3M3, B3M4, B3M5, B3M6, B3M7, B3M8
+	null, B3M1, B3M2, B3M3, B3M4, B3M5, B3M6, B3M7, B3M8, B3M22
 ]
 
 function createData(id, number, metraz, pokoi, karta, status, cardDetail) {
@@ -64,6 +65,7 @@ export const rowsParter = [
 	createData(4, 'B2.M2', '68.69', 4, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedane', B2M[2]),
 	createData(5, 'B3.M1', '39.74', 2, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B3M[1]),
 	createData(6, 'B3.M2', '49.85', 2, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B3M[2]),
+	createData(6, 'B3.M1-B3.M2 (łączne)', '89.36', 5, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B3M[9]),
 ];
 
 export const rowsPietro1 = [
