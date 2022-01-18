@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-import {GaleriaData} from './GaleriaData'
+import {GaleriaData2021, GaleriaData2022} from './GaleriaData'
 import {Row, Col, Container, ListGroup} from 'react-bootstrap';
 import ImageGallery from 'react-image-gallery';
 
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 function Galeria(props) {
     const refImg = React.useRef(null)
     const classes = useStyles();
-    const [selectGaleria, setSelectGaleria] = useState(GaleriaData[0]);
+    const [selectGaleria, setSelectGaleria] = useState(GaleriaData2021[0]);
     const [imageIndex, setImageIndex] = useState(0);
 
     const handleClickListItem = (project) => {
@@ -79,7 +79,21 @@ function Galeria(props) {
                                     </Col>
                                 </Row>
                                 <ListGroup variant="flush" defaultActiveKey="list-2021-1" >
-                                    {GaleriaData.map((data) => (
+                                    {GaleriaData2021.map((data) => (
+                                        <ListGroup.Item action className={"text-left"}
+                                                        eventKey={'list-2021-' + data.id}
+                                                        onClick={(e) => handleClickListItem(data)}>
+                                            {data.name}
+                                        </ListGroup.Item>
+                                    ))}
+
+                                <Row>
+                                    <Col sm={12} className={'year-row'}>
+                                        2022
+                                    </Col>
+                                </Row>
+
+                                    {GaleriaData2022.map((data) => (
                                         <ListGroup.Item action className={"text-left"}
                                                         eventKey={'list-2021-' + data.id}
                                                         onClick={(e) => handleClickListItem(data)}>
@@ -87,6 +101,7 @@ function Galeria(props) {
                                         </ListGroup.Item>
                                     ))}
                                 </ListGroup>
+
                             </Col>
                             <Col sm={10} lg={10} style={{margin: '0px', padding: '0px'}}>
                                 <div className={"title-galeria"}>{
