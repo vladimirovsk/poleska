@@ -3,14 +3,12 @@ const October2021_2 = process.env.PUBLIC_URL + '/component/galeria/october/2.jpg
 const October2021_3 = process.env.PUBLIC_URL + '/component/galeria/october/3.jpg'
 const October2021_4 = process.env.PUBLIC_URL + '/component/galeria/october/4.jpg'
 
-
 const November2021_1 = process.env.PUBLIC_URL + '/component/galeria/november/1.jpg'
 const November2021_2 = process.env.PUBLIC_URL + '/component/galeria/november/2.jpg'
 const November2021_3 = process.env.PUBLIC_URL + '/component/galeria/november/3.jpg'
 
 const January2022_1 = process.env.PUBLIC_URL + '/component/galeria/january/1.jpg'
 const January2022_2 = process.env.PUBLIC_URL + '/component/galeria/january/2.jpg'
-
 
 export const October2021 = [
     {
