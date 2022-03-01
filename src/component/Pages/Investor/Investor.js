@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col, Modal, Button, Image} from 'react-bootstrap';
 import Slider from "../../Slider/Slider"
 import Scontactuy from "../../Scontactuy/Scontactuy";
 import './Investor.css'
@@ -19,7 +19,14 @@ const poleskaSlide7 = process.env.PUBLIC_URL+pathCard+ "/poleska/image7.png";
 
 const logoPoleska = process.env.PUBLIC_URL+'/component/header/logo.png';
 
+const FacebookImage = process.env.PUBLIC_URL + '/image/facebook.png';
+const FacebookUrl = 'https://www.facebook.com/hkgroup.deweloper';
+
+const InstagramImage = process.env.PUBLIC_URL + '/image/instagram.png';
+const InstagramUrl = 'https://www.instagram.com/hkgroup.deweloper';
+
 function Investor() {
+	const [showDialog, setShowDialog] = React.useState(true);
 
 	const imageData1 = [
 		poleskaSlide1,
@@ -33,6 +40,10 @@ function Investor() {
 		poleskaSlide6,
 		poleskaSlide7
 	]
+
+	const handleDialogClose = () =>{
+		setShowDialog(false);
+	}
 
 	return (
 		<React.Fragment>
@@ -90,6 +101,36 @@ function Investor() {
 			</Container>
 			<Slider imageData={imageData2} Caption={""}/>
 			<Scontactuy/>
+
+			{/*<Modal  size='lg'*/}
+			<Modal centered size={'lg'}
+					// dialogClassName="modal-90w"
+					 show={showDialog} onHide={handleDialogClose}>
+				<Modal.Header closeButton>
+					<Modal.Title>Zapraszamy do polubienia nas na Facebook i Instagramie!</Modal.Title>
+				</Modal.Header>
+				<Modal.Body>
+					<Row>
+						<Col className={'m-5 mt-2 mb-2 text-center'}>
+							<Image src={FacebookImage} alt={'Facebook'} className={'mr-2'} />
+							<a href={FacebookUrl}>{FacebookUrl}</a>
+
+
+						</Col>
+					</Row>
+					<Row>
+						<Col className={'m-5 mt-2 mb-2 text-center'}>
+							<Image src={InstagramImage} alt={'Instagram'} className={'mr-2'} />
+							<a href={InstagramUrl}>{InstagramUrl}</a>
+						</Col>
+					</Row>
+				</Modal.Body>
+				<Modal.Footer>
+					<Button variant="success" onClick={handleDialogClose}>
+						Zamknij
+					</Button>
+				</Modal.Footer>
+			</Modal>
 
 		</React.Fragment>
 	)

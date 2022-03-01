@@ -2,6 +2,12 @@
 .root{
 
 }
+/*.modal-dialog {*/
+/*    !*display:flex !important;*!*/
+/*    margin: auto;*/
+/*    !*align-items: center;*!*/
+/*    !*width: 200vmax;*!*/
+/*}*/
 
 .titlePage {
     background-color: #F1F1F1;
