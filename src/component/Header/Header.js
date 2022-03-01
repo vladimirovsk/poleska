@@ -46,7 +46,7 @@ function Header() {
                                 </NavLink>
                             </NavDropdown>
                             <NavLink className={'nav-link'} activeClassName="active" to={'/podbrania'}>DO POBRANIA</NavLink>
-                            <NavLink className={'nav-link'} activeClassName="active" to={'/zdjencia'}>ZDJĘCIA Z BUDOWY</NavLink>
+                            <NavLink className={'nav-link'} activeClassName="active" to={'/zdjecia'}>ZDJĘCIA Z BUDOWY</NavLink>
                     </Nav>
                 </Navbar.Collapse>
                 </Container>

@@ -9,6 +9,12 @@ const November2021_3 = process.env.PUBLIC_URL + '/component/galeria/november/3.j
 
 const January2022_1 = process.env.PUBLIC_URL + '/component/galeria/january/1.jpg'
 const January2022_2 = process.env.PUBLIC_URL + '/component/galeria/january/2.jpg'
+const January2022_3 = process.env.PUBLIC_URL + '/component/galeria/january/3.jpg'
+
+
+const February2022_1 = process.env.PUBLIC_URL + '/component/galeria/february/1.jpg'
+const February2022_2 = process.env.PUBLIC_URL + '/component/galeria/february/2.jpg'
+const February2022_3 = process.env.PUBLIC_URL + '/component/galeria/february/3.jpg'
 
 export const October2021 = [
     {
@@ -56,31 +62,68 @@ const January2022 = [
         image: January2022_2,
         caption: 'Zakończyliśmy wykonywanie palisady betonowej, kontynuacja robót ziemnych, trwają prace nad montażem żurawia wieżowego do obsługi transportu pionowego budowy.'
     },
+
+    {
+        image: January2022_3,
+        caption: 'Zakończyliśmy wykonywanie palisady betonowej, kontynuacja robót ziemnych, trwają prace nad montażem żurawia wieżowego do obsługi transportu pionowego budowy.'
+    },
+
 ]
+
+const February2022 = [
+
+    {
+        image: February2022_1,
+        caption: 'Rozpoczęliśmy prace przy płycie fundamentowej, aktualnie zabetonowany został drugi segment płyty, w reżimie technologii betonu wodoszczelnego.\n' +
+            '\n' +
+            'Przygotowane deskowania pod wykonywanie ścian zewnętrznych garażu.'
+    },
+    {
+        image: February2022_2,
+        caption: 'Rozpoczęliśmy prace przy płycie fundamentowej, aktualnie zabetonowany został drugi segment płyty, w reżimie technologii betonu wodoszczelnego.\n' +
+            '\n' +
+            'Przygotowane deskowania pod wykonywanie ścian zewnętrznych garażu.'
+    },
+    {
+        image: February2022_3,
+        caption: 'Rozpoczęliśmy prace przy płycie fundamentowej, aktualnie zabetonowany został drugi segment płyty, w reżimie technologii betonu wodoszczelnego.\n' +
+            '\n' +
+            'Przygotowane deskowania pod wykonywanie ścian zewnętrznych garażu.'
+    }
+
+]
+
 
 export const GaleriaData2021 = [
     {
-        id: 1, //Код
-        img: October2021_1, //Код картинки
+        id: 1, //Code
+        img: October2021_1, //Code default Picture
         name: "Październik",
-        images: October2021, //Массив картинок проекта
-        title: 'Październik 2021', //Тител
+        images: October2021, //Array picture images
+        title: 'Październik 2021', //Title
     },
     {
-        id: 2, //Код,
+        id: 2, //Code,
         name: "Listopad",
-        img: November2021_1, //Код картинки
-        images: November2021, //Массив картинок проекта
-        title: 'Listopad 2021', //Тител
+        img: November2021_1, //Code default Picture
+        images: November2021, //Array picture images
+        title: 'Listopad 2021', //Title
     }
     ];
 
 export const GaleriaData2022 = [
     {
-        id: 3, //Код,
+        id: 3, //Code,
         name: "Styczeń",
-        img: January2022_1, //Код картинки
-        images: January2022, //Массив картинок проекта
-        title: 'Styczeń 2022', //Тител
+        img: January2022_1, //Kod picture default
+        images: January2022, //Array picture images
+        title: 'Styczeń 2022', //Title
+    },
+    {
+        id: 4, //Code,
+        name: "Luty",
+        img: February2022_1, //Kod picture default
+        images: February2022, //Array pictures
+        title: 'Luty 2022', //Title
     }
 ];

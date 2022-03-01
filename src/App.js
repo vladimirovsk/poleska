@@ -18,7 +18,7 @@ const App=()=> {
         <Route exact={true} path="/apartamenty" render={()=><Apartamenty/>}/>
         <Route exact={true} path="/garaze" render={()=><Garaze/>}/>
         <Route exact={true} path="/podbrania" render={()=><Podbrania/>}/>
-        <Route exact={true} path="/zdjencia" render={()=><Galeria/>}/>
+        <Route exact={true} path="/zdjecia" render={()=><Galeria/>}/>
         <Redirect to={'/'} />
       </Switch>
   )
