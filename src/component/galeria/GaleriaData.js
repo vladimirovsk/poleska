@@ -93,7 +93,6 @@ const February2022 = [
 
 ]
 
-
 export const GaleriaData2021 = [
     {
         id: 1, //Code

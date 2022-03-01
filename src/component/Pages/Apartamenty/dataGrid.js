@@ -79,7 +79,7 @@ export const rowsPietro1 = [
 ];
 
 export const rowsPietro2 = [
-	createData(1, 'B1.M6', '86.40', 4,<img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B1M[6]),
+	createData(1, 'B1.M6', '86.40', 4,<img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedane', B1M[6]),
 	createData(2, 'B1.M7', '43.35', 2,<img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedane', B1M[7]),
 	createData(3, 'B1.M8', '54.19', 3,<img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedane', B1M[8]),
 	createData(4, 'B2.M5', '59.69', 3,<img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedane', B2M[5]),

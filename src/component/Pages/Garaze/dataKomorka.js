@@ -83,6 +83,6 @@ export const rowsKomorka = [
 	createData(1, 'B3-1.30', 2.74, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedana', B31[30]),
 	createData(1, 'B3-1.31', 2.74, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedana', B31[31]),
 	createData(1, 'B3-1.32', 2.74, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedana', B31[32]),
-	createData(1, 'B3-1.33', 2.38, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B31[33]),
-	createData(1, 'B3-1.34', 2.38, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B31[34]),
+	createData(1, 'B3-1.33', 2.38, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedane', B31[33]),
+	createData(1, 'B3-1.34', 2.38, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedane', B31[34]),
 ];
