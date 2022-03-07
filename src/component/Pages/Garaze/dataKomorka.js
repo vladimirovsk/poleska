@@ -56,13 +56,13 @@ export const columnsKomorka = [
 
 export const rowsKomorka = [
 	createData(1, 'B3-1.4', 2.33, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedana', B31[4]),
-	createData(1, 'B3-1.5', 2.21, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B31[5]),
+	createData(1, 'B3-1.5', 2.21, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'rezerwacja', B31[5]),
 	createData(1, 'B3-1.6', 2.51, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedana', B31[6]),
 	createData(1, 'B3-1.7', 2.51, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedana', B31[7]),
 	createData(1, 'B3-1.8', 1.46, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedana', B31[8]),
 	createData(1, 'B3-1.9', 1.39, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedana', B31[9]),
-	createData(1, 'B3-1.10', 1.57, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B31[10]),
-	createData(1, 'B3-1.11', 1.57, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'wolne', B31[11]),
+	createData(1, 'B3-1.10', 1.57, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedane', B31[10]),
+	createData(1, 'B3-1.11', 1.57, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedane', B31[11]),
 	createData(1, 'B3-1.13', 4.41, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedana', B31[13]),
 	createData(1, 'B3-1.14', 4.34, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedana', B31[14]),
 	// createData(1, 'B3-1.15', 0.00, 4000, <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'zarezerwowane', B31[15]),
