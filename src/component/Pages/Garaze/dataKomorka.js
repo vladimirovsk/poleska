@@ -56,7 +56,7 @@ export const columnsKomorka = [
 
 export const rowsKomorka = [
 	createData(1, 'B3-1.4', 2.33, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedana', B31[4]),
-	createData(1, 'B3-1.5', 2.21, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'rezerwacja', B31[5]),
+	createData(1, 'B3-1.5', 2.21, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedane', B31[5]),
 	createData(1, 'B3-1.6', 2.51, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedana', B31[6]),
 	createData(1, 'B3-1.7', 2.51, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedana', B31[7]),
 	createData(1, 'B3-1.8', 1.46, '4.000', <img className='iconPdf' src={greenPdf} alt={'pdf'}/>, 'sprzedana', B31[8]),
