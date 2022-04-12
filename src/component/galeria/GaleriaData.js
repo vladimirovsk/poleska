@@ -16,6 +16,12 @@ const February2022_1 = process.env.PUBLIC_URL + '/component/galeria/february/1.j
 const February2022_2 = process.env.PUBLIC_URL + '/component/galeria/february/2.jpg'
 const February2022_3 = process.env.PUBLIC_URL + '/component/galeria/february/3.jpg'
 
+const March2022_1 = process.env.PUBLIC_URL + '/component/galeria/marzec/1.png'
+const March2022_2 = process.env.PUBLIC_URL + '/component/galeria/marzec/2.png'
+const March2022_3 = process.env.PUBLIC_URL + '/component/galeria/marzec/3.png'
+const March2022_4 = process.env.PUBLIC_URL + '/component/galeria/marzec/4.png'
+const March2022_5 = process.env.PUBLIC_URL + '/component/galeria/marzec/5.png'
+
 export const October2021 = [
     {
         image: October2021_1,
@@ -42,7 +48,6 @@ const November2021 = [
         image: November2021_1,
         caption: 'REALIZACJA ZABEZPIECZENIA WYKOPU W FORMIE PALISADY'
     },
-
     {
         image: November2021_2,
         caption: 'REALIZACJA ZABEZPIECZENIA WYKOPU W FORMIE PALISADY'
@@ -57,21 +62,17 @@ const January2022 = [
         image: January2022_1,
         caption: 'Zakończyliśmy wykonywanie palisady betonowej, kontynuacja robót ziemnych, trwają prace nad montażem żurawia wieżowego do obsługi transportu pionowego budowy.'
     },
-
     {
         image: January2022_2,
         caption: 'Zakończyliśmy wykonywanie palisady betonowej, kontynuacja robót ziemnych, trwają prace nad montażem żurawia wieżowego do obsługi transportu pionowego budowy.'
     },
-
     {
         image: January2022_3,
         caption: 'Zakończyliśmy wykonywanie palisady betonowej, kontynuacja robót ziemnych, trwają prace nad montażem żurawia wieżowego do obsługi transportu pionowego budowy.'
     },
-
 ]
 
 const February2022 = [
-
     {
         image: February2022_1,
         caption: 'Rozpoczęliśmy prace przy płycie fundamentowej, aktualnie zabetonowany został drugi segment płyty, w reżimie technologii betonu wodoszczelnego.\n' +
@@ -90,6 +91,32 @@ const February2022 = [
             '\n' +
             'Przygotowane deskowania pod wykonywanie ścian zewnętrznych garażu.'
     }
+]
+
+const March2022 = [
+    {
+        image: March2022_1,
+        caption: 'Trwają prace przy wykonywaniu konstrukcji garażu podziemnego wraz z rampą zjazdową oraz komórkami lokatorskimi'
+    },
+    {
+        image: March2022_2,
+        caption: 'Trwają prace przy wykonywaniu konstrukcji garażu podziemnego wraz z rampą zjazdową oraz komórkami lokatorskimi'
+    },
+    {
+        image: March2022_3,
+        caption: 'Trwają prace przy wykonywaniu konstrukcji garażu podziemnego wraz z rampą zjazdową oraz komórkami lokatorskimi'
+    },
+    {
+        image: March2022_4,
+        caption: 'Trwają prace przy wykonywaniu konstrukcji garażu podziemnego wraz z rampą zjazdową oraz komórkami lokatorskimi'
+    },
+    {
+        image: March2022_5,
+        caption: 'Trwają prace przy wykonywaniu konstrukcji garażu podziemnego wraz z rampą zjazdową oraz komórkami lokatorskimi'
+    },
+
+
+
 
 ]
 
@@ -124,5 +151,12 @@ export const GaleriaData2022 = [
         img: February2022_1, //Kod picture default
         images: February2022, //Array pictures
         title: 'Luty 2022', //Title
+    },
+    {
+        id: 5, //Code,
+        name: "Marzec ",
+        img: March2022_1, //Kod picture default
+        images: March2022, //Array pictures
+        title: 'Marzec 2022', //Title
     }
 ];

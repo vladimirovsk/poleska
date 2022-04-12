@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Galeria(props) {
-    const refImg = React.useRef(null)
+    // const refImg = React.useRef(null)
     const classes = useStyles();
     const [selectGaleria, setSelectGaleria] = useState(GaleriaData2021[0]);
     const [imageIndex, setImageIndex] = useState(0);

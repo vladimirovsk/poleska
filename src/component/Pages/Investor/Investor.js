@@ -102,7 +102,6 @@ function Investor() {
 			<Slider imageData={imageData2} Caption={""}/>
 			<Scontactuy/>
 
-			{/*<Modal  size='lg'*/}
 			<Modal centered size={'lg'}
 					// dialogClassName="modal-90w"
 					 show={showDialog} onHide={handleDialogClose}>
